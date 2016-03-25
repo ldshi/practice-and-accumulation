@@ -1,8 +1,4 @@
 /*
- * This method is for deleting the specified repeated adjacent character INSIDE a string(only keep one).
- */
-
-/*
  * Compiler info given out by 'gcc --version':
  *   Configured with: --prefix=/Applications/Xcode.app/Contents/Developer/usr --with-gxx-include-dir=/usr/include/c++/4.2.1
  *   Apple LLVM version 7.0.2 (clang-700.1.81)
@@ -70,7 +66,7 @@ int main() {
 
   char input[128];
 
-  char *tmp;
+  char *tmp = NULL;
 
   fgets(input, sizeof(input), stdin);
 
