@@ -1,3 +1,7 @@
+#
+## python --version -> Python 2.7.10
+#
+
 fee_entrance = 2
 fee_1st_hour = 3
 fee_per_after_2nd_hour = 4

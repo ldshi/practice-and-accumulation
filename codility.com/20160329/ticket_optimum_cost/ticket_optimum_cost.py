@@ -1,3 +1,7 @@
+#
+## python --version -> Python 2.7.10
+#
+
 type_1_day = 2
 type_7_day = 7
 type_30_day = 30
