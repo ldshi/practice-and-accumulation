@@ -43,6 +43,14 @@ def find_longest_road(tree, root):
 
   tree_keys = tree.keys()
 
+  #
+  # 1. Use recursion strategy to check whether one choice is correct greedily
+  # 2. 'res' parameter is quite important, coz you can't use recursion strategy in the 'for loop'.
+  # 3. The 'find_n_nodes == 1' check making this method will return 'True' only for checking to get the longest road, that means: if the longest road
+  #      is 6, if you try 5, then will return 'False'.
+  # 4. But not exactly, if 'find_n_nodes = 3 < length_of_longest_road' but it happen to reach one leaf node, the method still will return 'True',
+  #      this is why in the below method 'get_length_of_longest_road' test the value from the possibly greatest value. 
+  #
   def greedy_checker(from_node, find_n_nodes, res):
     if from_node in tree_keys:
       find_n_nodes -= 1
@@ -51,6 +59,10 @@ def find_longest_road(tree, root):
     elif find_n_nodes == 1:
       res['is_right_choice'] = True
 
+  #
+  # 1. As explained in above '4', here should test from the possibly greatest value.
+  # 2. Decided by the storing way, the highest tree is: one element standards for one exclusive level in the tree.
+  #
   def get_length_of_longest_road():
     length_of_longest_road = len(tree) + 1
     while True:
@@ -103,7 +115,7 @@ def split_tree(tree, root, road_start, road_end):
               if inner_node in tree.keys():
                 tmp_end_nodes.append(inner_node)
 
-      
+
       trees[road_end] = new_tree
 
   if len(tree) == 1:
