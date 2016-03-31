@@ -4,3 +4,8 @@
 - You can find the corresponding compiler info inside each individual source file.
 
 ## Accumulations / References
+1. Find out the length of the longest path and one possible longest path in a multi-way tree
+  - Required tree description example: {5: {0: [6, 7], 1: [9, 0], 2: [4], 5: [1], 6: [3, 8], 7: [2]}}
+    - '5' is root
+    - '{0: [6, 7], 1: [9, 0], 2: [4], 5: [1], 6: [3, 8], 7: [2]}' is paths descriptions
+  - Source code and explanation refer to: /codility.com/20160330/high_speed_camera_cover/high_speed_camera_cover.py -> find_longest_road(tree, root)
