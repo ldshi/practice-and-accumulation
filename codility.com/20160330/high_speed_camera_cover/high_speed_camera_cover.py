@@ -172,9 +172,9 @@ def solution(A, B, K):
 
   result = 0
   for tree_root in all_trees.keys():
-    tmp = len(all_trees[tree_root])
-    if tmp and tmp > result:
-      result = tmp
+    longest_road = find_longest_road(all_trees[tree_root], tree_root)
+    if len(longest_road) - 1 > result:
+      result = len(longest_road) - 1
 
   return result
 
