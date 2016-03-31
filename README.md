@@ -8,4 +8,4 @@
   - Required tree description example: {5: {0: [6, 7], 1: [9, 0], 2: [4], 5: [1], 6: [3, 8], 7: [2]}}
     - '5' is root
     - '{0: [6, 7], 1: [9, 0], 2: [4], 5: [1], 6: [3, 8], 7: [2]}' is paths descriptions
-  - Source code and explanation refer to: /codility.com/20160330/high_speed_camera_cover/high_speed_camera_cover.py -> find_longest_road(tree, root)
+  - Source code and explanation refer to [high_speed_camera_cover.py -> find_longest_road(tree, root)](https://github.com/leonard-sxy/algorithm_practice/blob/master/codility.com/20160330/high_speed_camera_cover/high_speed_camera_cover.py)
