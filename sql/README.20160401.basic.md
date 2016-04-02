@@ -116,7 +116,7 @@
                 having cast(a.salary as decimal(10, 1)) >= cast(avg(a.salary) as decimal(10, 1))
                 ```
               
-                - **The answer is _NO_, and perhaps you will experience: sometimes you do exactly get what you want, but sometimes you can't, that is what I mean by 'so probably it depends on how SQL throws the dice'**
+                - **The answer is _NO_, and perhaps you will experience: sometimes you do exactly get what you want, but sometimes you can't, that is what I mean by 'so probably it depends on how SQL throws the dice'.**
 
               - Actually if only you fully understand the 'group by', you will find this is a totally wrong thinking for trying to solve this question, coz after 'bgoup by', each group may has more than one record need to be in the final records.
 
