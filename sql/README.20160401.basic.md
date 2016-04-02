@@ -70,49 +70,52 @@
             - Question
               - Provide data about all employees whose salary is higher or equal to the average salary of employees working in the same department (regardless if employees have left the company or not). Required attributes are last name, first name, salary and department name.
             - Step by step
+              - Code and corresponding result image:
 
-              ```
-              select
-                a.first_name as 'First Name',
-                a.last_name as 'Last Name',
-                a.salary as 'Salary',
-                b.id as 'Department ID',
-                b.name as 'Department Name'
-              from Employee as a
-                join Department as b on a.department_id = b.id
-              ```
-              - With above code you will get:
+                ```
+                select
+                  a.first_name as 'First Name',
+                  a.last_name as 'Last Name',
+                  a.salary as 'Salary',
+                  b.id as 'Department ID',
+                  b.name as 'Department Name'
+                from Employee as a
+                  join Department as b on a.department_id = b.id
+                ```
                 - <img src="images/20160402_1.png"/>
 
-              ```
-              select
-                a.first_name as 'First Name',
-                a.last_name as 'Last Name',
-                a.salary as 'Salary',
-                b.id as 'Department ID',
-                b.name as 'Department Name',
-                cast(avg(a.salary) as decimal(10, 1)) as 'Everage Salary of Each Department'
-              from Employee as a
-                join Department as b on a.department_id = b.id
-              group by b.id
-              ```
-              - Modify the first piece code a bit, then you can get the 'average salary of each department', as below:
+              - Modified code and corresponding image:
+
+                ```
+                select
+                  a.first_name as 'First Name',
+                  a.last_name as 'Last Name',
+                  a.salary as 'Salary',
+                  b.id as 'Department ID',
+                  b.name as 'Department Name',
+                  cast(avg(a.salary) as decimal(10, 1)) as 'Everage Salary of Each Department'
+                from Employee as a
+                  join Department as b on a.department_id = b.id
+                group by b.id
+                ```
                 - <img src="images/20160402_2.png"/>
 
-              ```
-              select
-                a.first_name as 'First Name',
-                a.last_name as 'Last Name',
-                a.salary as 'Salary',
-                b.id as 'Department ID',
-                b.name as 'Department Name',
-                cast(avg(a.salary) as decimal(10, 1)) as 'Everage Salary of Each Department'
-              from Employee as a
-                join Department as b on a.department_id = b.id
-              group by b.id
-              having cast(a.salary as decimal(10, 1)) >= cast(avg(a.salary) as decimal(10, 1))
-              ```
               - **Do you think the above solution will work or not?**
+
+                ```
+                select
+                  a.first_name as 'First Name',
+                  a.last_name as 'Last Name',
+                  a.salary as 'Salary',
+                  b.id as 'Department ID',
+                  b.name as 'Department Name',
+                  cast(avg(a.salary) as decimal(10, 1)) as 'Everage Salary of Each Department'
+                from Employee as a
+                  join Department as b on a.department_id = b.id
+                group by b.id
+                having cast(a.salary as decimal(10, 1)) >= cast(avg(a.salary) as decimal(10, 1))
+                ```
+              
                 - **The answer is _NO_, and perhaps you will experience: sometimes you do exactly get what you want, but sometimes you can't, that is what I mean by 'so probably it depends on how SQL throws the dice'**
 
               - Actually if only you fully understand the 'group by', you will find this is a totally wrong thinking for trying to solve this question, coz after 'bgoup by', each group may has more than one record need to be in the final records.
