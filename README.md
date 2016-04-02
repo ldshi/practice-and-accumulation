@@ -10,4 +10,4 @@
     - '{0: [6, 7], 1: [9, 0], 2: [4], 5: [1], 6: [3, 8], 7: [2]}' is paths descriptions
   - Source code and explanation refer to: [high_speed_camera_cover.py -> find_longest_road(tree, root)](algorithm/codility.com/20160330/high_speed_camera_cover/high_speed_camera_cover.py)
   
-2. [SQL various of 'join', 'group by' and 'having' understanding](sql/20160401.basic.md)
+2. [SQL various of 'join', 'group by' and 'having' understanding](sql/20160401.basic.read.me)
