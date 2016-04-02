@@ -119,6 +119,43 @@
                 - **The answer is _NO_, and perhaps you will experience: sometimes you do exactly get what you want, but sometimes you can't, that is what I mean by 'so probably it depends on how SQL throws the dice'.**
 
               - Actually if only you fully understand the 'group by', you will find this is a totally wrong thinking for trying to solve this question, coz after 'bgoup by', each group may has more than one record need to be in the final records.
+              - The correct solution is:
+
+                ```
+                select
+                  a.first_name as 'First Name',
+                  a.last_name as 'Last Name',
+                  a.salary as 'Salary',
+                  b.name as 'Department Name'
+                from Employee as a
+                  join Department as b on a.department_id = b.id
+                where a.salary >=
+                  (
+                    select
+                      avg(c.salary)
+                    from Employee as c
+                    group by c.department_id
+                    having c.department_id = a.department_id
+                  )
+                ```
+                or
+
+                ```
+                select
+                  a.first_name as 'First Name',
+                  a.last_name as 'Last Name',
+                  a.salary as 'Salary',
+                  b.name as 'Department Name'
+                from Employee as a
+                  join Department as b on a.department_id = b.id
+                where a.salary >=
+                  (
+                    select
+                      avg(c.salary)
+                    from Employee as c
+                    where c.department_id = a.department_id
+                  )
+                ```
 
               - **Again:**
                 - **All the records inside a group are required to be same in a sense to your query, that is: choosing which record as reference doesn't matter.**
