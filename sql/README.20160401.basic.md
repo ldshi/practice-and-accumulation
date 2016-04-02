@@ -57,12 +57,12 @@
       - First 'joins' have to be done among tables: Book, Writing and Author, here you should imagine you will get a middle records like the below image shows:
         - <img src="images/20160401_1.png"/>
       - Then meet the 'group by' and 'having' statements:
-        - The 'group by' statement will proceed the 'group operation' by the condition given by you after the 'by' and form the records into several groups(like the coloured boxs in above pic), then proceed the 'having conditions' on **EACH GROUP, here you should pay enough attention to _EACH GROUP_, not: proceed 'having conditions' on those records inside each group, but _EACH GROUP_**, that means only having two results:**
+        - The 'group by' statement will proceed the 'group operation' by the condition given by you after the 'by' and form the records into several groups(like the coloured boxs in above pic), then proceed the 'having conditions' on **EACH GROUP, here you should pay enough attention to _EACH GROUP_, not: proceed 'having conditions' on those records inside each group, but _EACH GROUP_, that means only having two results:**
           - **Keep this group.**
           - **Omit this group.**
           - **As how to choose one record from those kept groups, and then form into the output, you told no clue to SQL how to do that, so probably it depends on how SQL throws the dice.**
           - So:
-            - **Here require you to make all the records inside a group are same in a sense to your query, that is: choosing which record doesn't matter.**
+            - **Here require you to make all the records inside a group are same in a sense to your query, that is: choosing which record as reference doesn't matter.**
 
           - Lets go through this with an example:
             - Database schema
@@ -121,7 +121,7 @@
               - Actually if only you fully understand the 'group by', you will find this is a totally wrong thinking for trying to solve this question, coz after 'bgoup by', each group may has more than one record need to be in the final records.
 
               - **Again:**
-                - **All the records inside a group are same in a sense to your query, that is: choosing which record doesn't matter.**
+                - **All the records inside a group are required to be same in a sense to your query, that is: choosing which record as reference doesn't matter.**
                 - **If one group is not empty, and then will _HAVE ONE_ and must will _ONLY HAVE ONE_ record goes into the output, but which one depends on how SQL throws the dice'.**
 
               - [SQL vs MySQL: Rules about aggregate operations and GROUP BY](http://stackoverflow.com/questions/12843303/sql-vs-mysql-rules-about-aggregate-operations-and-group-by)
