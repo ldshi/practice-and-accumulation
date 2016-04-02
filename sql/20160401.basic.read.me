@@ -54,20 +54,78 @@
       having count(*) = 1 and c.first_name = 'Andrew' and c.last_name = 'Duncan'
       ```
     - Explanation and critical points
-      1. First 'joins' have to be done among tables: Book, Writing and Author, here you should imagine you will get a middle records like the below image shows:
+      - First 'joins' have to be done among tables: Book, Writing and Author, here you should imagine you will get a middle records like the below image shows:
         - <img src="images/20160401_1.png"/>
-      2. Then meet the 'group by' and 'having' statements:
-        - The 'group by' statement will proceed the 'group operation' by the condition given by you after the 'by' and form the records into several groups(like the coloured boxs in above pic), then proceed the 'having conditions' on each group(apparently, only will possibly omit some reconrds from some groups).
-        - Here is: will omit those record(book) which 'has more than one author(**count(*) = 1**)' or 'the author is not Andrew Duncan'.
-      3. Finally will extract the first record out from each group and form into the final record.
+      - Then meet the 'group by' and 'having' statements:
+        - The 'group by' statement will proceed the 'group operation' by the condition given by you after the 'by' and form the records into several groups(like the coloured boxs in above pic), then proceed the 'having conditions' on **EACH GROUP, here you should pay enough attention to _EACH GROUP_, not: proceed 'having conditions' on those records inside each group, but _EACH GROUP_**, that means only having two results:**
+          - **Keep this group.**
+          - **Omit this group.**
+          - **As how to choose one record from those kept groups, and then form into the output, you told no clue to SQL how to do that, so probably it depends on how SQL throws the dice.**
+          - So:
+            - **Here require you to make all the records inside a group are same in a sense to your query, that is: choosing which record doesn't matter.**
 
-      - So:
-        - 'having statement' to 'group by statement' just like 'where statement' to 'select statement', the execution process is inseparable.
-        - If 'group by' doesn't have 'having', then will always extract the first record out from each group and form into the new records.
+          - Lets go through this with an example:
+            - Database schema
+              - <img src="images/20160402_0.png"/>
+            - Question
+              - Provide data about all employees whose salary is higher or equal to the average salary of employees working in the same department (regardless if employees have left the company or not). Required attributes are last name, first name, salary and department name.
+            - Step by step
+
+              ```
+              select
+                a.first_name as 'First Name',
+                a.last_name as 'Last Name',
+                a.salary as 'Salary',
+                b.id as 'Department ID',
+                b.name as 'Department Name'
+              from Employee as a
+                join Department as b on a.department_id = b.id
+              ```
+              - With above code you will get:
+                - <img src="images/20160402_1.png"/>
+
+              ```
+              select
+                a.first_name as 'First Name',
+                a.last_name as 'Last Name',
+                a.salary as 'Salary',
+                b.id as 'Department ID',
+                b.name as 'Department Name',
+                cast(avg(a.salary) as decimal(10, 1)) as 'Everage Salary of Each Department'
+              from Employee as a
+                join Department as b on a.department_id = b.id
+              group by b.id
+              ```
+              - Modify the first piece code a bit, then you can get the 'average salary of each department', as below:
+                - <img src="images/20160402_2.png"/>
+
+              ```
+              select
+                a.first_name as 'First Name',
+                a.last_name as 'Last Name',
+                a.salary as 'Salary',
+                b.id as 'Department ID',
+                b.name as 'Department Name',
+                cast(avg(a.salary) as decimal(10, 1)) as 'Everage Salary of Each Department'
+              from Employee as a
+                join Department as b on a.department_id = b.id
+              group by b.id
+              having cast(a.salary as decimal(10, 1)) >= cast(avg(a.salary) as decimal(10, 1))
+              ```
+              - **Do you think the above solution will work or not?**
+                - **The answer is _NO_, and perhaps you will experience: sometimes you do exactly get what you want, but sometimes you can't, that is what I mean by 'so probably it depends on how SQL throws the dice'**
+
+              - Actually if only you fully understand the 'group by', you will find this is a totally wrong thinking for trying to solve this question, coz after 'bgoup by', each group may has more than one record need to be in the final records.
+
+              - **Again:**
+                - **All the records inside a group are same in a sense to your query, that is: choosing which record doesn't matter.**
+                - **If one group is not empty, and then will _HAVE ONE_ and must will _ONLY HAVE ONE_ record goes into the output, but which one depends on how SQL throws the dice'.**
+
+              - [SQL vs MySQL: Rules about aggregate operations and GROUP BY](http://stackoverflow.com/questions/12843303/sql-vs-mysql-rules-about-aggregate-operations-and-group-by)
 
       - When proceed the join operation, if two tables have the same column, then some SQL product will use the later one override the previous one.
       - So:
-        - **Never use '*' in the 'select', this is a good practice.**
+        - **Never use '*' in the 'select', this is a very important good practice.**
         - **If two tables have same columns, then rename them use 'as' in 'select' will get around of this problem.**
 
 

@@ -1,0 +1,53 @@
+1. 
+  - Database schema
+    - <img src="images/20160401_0.png"/>
+  - Question
+    - Provide data about all books (Title, Isbn) having been written by two or more people and whose title contains the word Head.
+  - Solution
+
+    ```
+    select
+      a.title as Title,
+      a.isbn as Isbn
+    from Book as a
+      join Writing as b on a.id = b.book_id
+    where a.title like '%Head%'
+    group by a.id
+    having count(*) >= 2
+    ```
+
+2. 
+  - Database schema
+    - <img src="images/20160401_0.png"/>
+  - Question
+    - Provide data about all publishers having published only one book. Required attributes are publisher’s name and book’s title.
+  - Solution
+
+    ```
+    select
+      a.title,
+      b.name
+    from Book as a
+      join Publisher as b on a.publisher_id = b.id
+    group by b.id
+    having count(*) = 1
+    ```
+
+3. 
+  - Database schema
+    - <img src="images/20160402_0.png"/>
+  - Question
+    - Provide data about departments whose total of salaries of employees working in it exceeds 61,000. Required attributes are the department name and the related total of salaries which have to be renamed into Department and TotalSalaries.
+  - Solution
+
+    ```
+    select
+      b.name as 'Department',
+      sum(a.salary) as 'TotalSalaries'
+    from Employee as a
+      join Department as b on a.department_id = b.id
+    group by b.id
+    having sum(a.salary) > 61000
+    ```
+
+
