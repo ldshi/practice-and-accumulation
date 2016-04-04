@@ -27,3 +27,7 @@
       - **If one group is not empty, and then will _HAVE ONE_ and must will _ONLY HAVE ONE_ record goes into the output, but which one depends on how SQL throws the dice'.**
       
     - [SQL vs MySQL: Rules about aggregate operations and GROUP BY](http://stackoverflow.com/questions/12843303/sql-vs-mysql-rules-about-aggregate-operations-and-group-by)
+
+3. [How to understand buffer](basics/README.20160404.buffer.md)
+
+
