@@ -30,7 +30,7 @@
 
 3. [How to understand buffer](Node.js/README.20160404.buffer.md)
 
-4. [JavaScript variable scope](JavaScript/README.20160405.variable.scope.md)
+4. [JavaScript variable scope](JavaScript/README.20160405.variable_scope.md)
 
 5. [console.log('-1' == -1);  ->  true](JavaScript/README.20160405.abstract_equality_comparison_algorithm.md)
 
