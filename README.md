@@ -34,4 +34,6 @@
 
 5. [console.log('-1' == -1);  ->  true console.log('' == 0)  -> true  /  **== vs ===**](JavaScript/README.20160405.abstract_equality_comparison_algorithm.md)
 
+6. [How to deeply understand 'super' keyword in Python](Python/README.20160413.super_keyword.md)
+
 
