@@ -20,6 +20,17 @@ def revert(head):
 
   return pre_node
 
+def recursively_revert(head):
+  if not head or not head.next:
+    return head
+
+  new_head = recursively_revert(head.next)
+
+  head.next.next = head
+  head.next = None
+
+  return new_head
+
 def print_linked_list(head):
   tmp_node = head
 
@@ -35,5 +46,9 @@ print_linked_list(linked_list_0)
 reverted_linked_list_0 = revert(linked_list_0)
 
 print_linked_list(reverted_linked_list_0)
+
+reverted_reverted_linked_list_0 = recursively_revert(reverted_linked_list_0)
+
+print_linked_list(reverted_reverted_linked_list_0)
 
 
