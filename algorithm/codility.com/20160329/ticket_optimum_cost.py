@@ -14,20 +14,20 @@ def solution(A):
     return len(A) * type_1_day
   else:
     total = 0
-    begin = 0
+    begin = end = 0
     while len(A) >= edge_1_day:
       end = begin + 3
-      while A[end] - A[begin] < type_7_day:
+      while end < len(A) and A[end] - A[begin] < type_7_day:
         end += 1
 
       if end > 3:
         total += type_7_day
         A = A[end : len(A)]
-        begin = end
       else:
         total += type_1_day
         A = A[begin + 1 : len(A)]
-        begin += 1
+
+      begin = end = 0
 
     total += len(A) * type_1_day
 
