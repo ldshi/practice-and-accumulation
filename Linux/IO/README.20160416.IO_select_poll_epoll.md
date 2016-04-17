@@ -6,8 +6,8 @@
 
   - In memory: User space vs Kernel space
 
-  - process switch
-    - [Refer here](../../OS/README.20160417.process_switch.md)
+  - context switch(process switch)
+    - [Refer here](../../OS/README.20160417.context_switch.md)
 
   - process block
     - 'process block' is a pro-activeness, that is when a process expects some resources or some events, itself invoke the 'block primitive' to block itself.
