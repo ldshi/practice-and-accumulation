@@ -36,4 +36,6 @@
 
 6. [How to deeply understand 'super' keyword in Python](Python/README.20160413.super_keyword.md)
 
+7. [How to deeply understand 'with' keyword in Python, implement the Context Manager as a Class or as a Generator](http://preshing.com/20110920/the-python-with-statement-by-example/)
+
 
