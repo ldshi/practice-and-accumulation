@@ -26,7 +26,7 @@
 - Comma-Separated Lists
 
   ```
-    ul > li:not(:last-child)::after {
+  ul > li:not(:last-child)::after {
     content: ",";
   }
   ```
@@ -124,7 +124,7 @@
       font-size: 1em;
     }
     ```
-    - Then set the font-size for modules to `rem`:
+  - Then set the font-size for modules to `rem`:
 
     ```
     article {
