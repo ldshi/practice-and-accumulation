@@ -1,0 +1,44 @@
+html, body {
+  height: 100%;
+  margin: 0;
+}
+
+body {
+  -webkit-align-items: center;  
+  -ms-flex-align: center;  
+  align-items: center;
+  display: -webkit-flex;
+  display: flex;
+}
+/*****************************************************************************/
+
+.nav li {
+  display: inline;
+}
+
+.nav li:not(:last-child) {
+  border-right: 1px solid #666;
+}
+/*****************************************************************************/
+
+ul > li:not(:last-child)::after {
+  content: ",";
+}
+/*****************************************************************************/
+
+li {
+  display: none;
+}
+
+/* select items 1 through 3 and display them */
+li:nth-child(-n + 2) {
+  display: block;
+}
+
+/* select items 1 through 3 and display them */
+li:not(:nth-child(-n + 3)) {
+  display: none;
+}
+/*****************************************************************************/
+
+
