@@ -59,4 +59,10 @@
       - `using temporary`
       - `using where`
 
+3. MySQL transaction level differences
+  - <img src="images/transaction_level_0.png"/>
+
+4. MyISAM vs InnoDB
+  - <img src="images/MyISAM_InnoDB_0.png"/>
+
 
