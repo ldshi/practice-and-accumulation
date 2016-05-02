@@ -96,20 +96,32 @@
 
   - 有源代码的教程
     - [scikit-learn](http://scikit-learn.org/stable/auto_examples/index.html)
+
     - 《机器学习实战》 有中文版，并附有python源代码。
-    - [《The Elements of Statistical Learning (豆瓣)》](http://book.douban.com/subject/3294335/) 这本书有对应的中文版：《统计学习基础 (豆瓣)》（http://book.douban.com/subject/1152126/）。书中配有R包。可以参照着代码学习算法。网盘中有中文版。
-    - 《Natural Language Processing with Python (豆瓣)》（http://book.douban.com/subject/3696989/） NLP 经典，其实主要是讲 python的NLTK 这个包。网盘中有中文版。
-    - 《Neural Networks and Deep Learning》（http://neuralnetworksanddeeplearning.com/） Michael Nielsen的神经网络教材，浅显易懂。国内有部分翻译，不全，建议直接看原版。
-    - 统计学习方法 (豆瓣) 》（http://book.douban.com/subject/10590856/）：李航经典教材。
-    - 《Pattern Recognition And Machine Learning (豆瓣) 》（http://book.douban.com/subject/2061116/）：经典中教材。 
+
+    - [《The Elements of Statistical Learning (豆瓣)》](http://book.douban.com/subject/3294335/) 这本书有对应的中文版：[《统计学习基础 (豆瓣)》](http://book.douban.com/subject/1152126/); 书中配有R包。可以参照着代码学习算法。网盘中有中文版。
+
+    - [《Natural Language Processing with Python (豆瓣)》](http://book.douban.com/subject/3696989/) NLP 经典，其实主要是讲 python的NLTK 这个包。网盘中有中文版。
+
+    - [《Neural Networks and Deep Learning》](http://neuralnetworksanddeeplearning.com/) Michael Nielsen的神经网络教材，浅显易懂。国内有部分翻译，不全，建议直接看原版。
+
+    - [《统计学习方法 (豆瓣) 》](http://book.douban.com/subject/10590856/) ：李航经典教材。
+
+    - [《Pattern Recognition And Machine Learning (豆瓣) 》]((http://book.douban.com/subject/2061116/) ：经典中教材。 
+
     - 《统计自然语言处理》自然语言处理经典教材 
+
     - 《Applied predictive modeling》：英文版，注重工程实践的机器学习教材 
-    - 《UFLDL教程》（http://ufldl.stanford.edu/wiki/index.php/UFLDL%E6%95%99%E7%A8%8B）：神经网络经典教材 
-    - 《deeplearningbook》（http://www.deeplearningbook.org/）:深度学习经典教材。
+
+    - [《UFLDL教程》](http://ufldl.stanford.edu/wiki/index.php/UFLDL%E6%95%99%E7%A8%8B) ：神经网络经典教材 
+
+    - [《deeplearningbook》](http://www.deeplearningbook.org/) :深度学习经典教材。
 
   - 工具书
-    - 《SciPy and NumPy (豆瓣) 》 （http://book.douban.com/subject/10561724/）
-    - 《Python for Data Analysis (豆瓣) 》作者是Pandas这个包的作者（http://book.douban.com/subject/10760444/）
-    - 机器学习(Machine Learning)与深度学习(Deep Learning)资料汇总（http://blog.csdn.net/zhongwen7710/article/details/45331915）
+    - [《SciPy and NumPy (豆瓣) 》](http://book.douban.com/subject/10561724/)
+
+    - [《Python for Data Analysis (豆瓣) 》](http://book.douban.com/subject/10760444/) Pandas
+
+    - [机器学习(Machine Learning)与深度学习(Deep Learning)资料汇总](http://blog.csdn.net/zhongwen7710/article/details/45331915)
 
 
