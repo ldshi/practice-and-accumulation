@@ -217,6 +217,68 @@ StopIteration
       print(rr)
     ```
 
-5. 
+5. Let generator carry some more extra info/status.
+  
+  ```
+  from collections import deque
+
+  class LineHistory:
+    def __init__(self, lines, history_len = 3):
+      self.lines = lines
+      self.history = deque(maxlen = history_len)
+
+    def __iter__(self):
+      for line_no, line in enumerate(self.lines, 1):
+        self.history.append((line_no, line))
+        yield line
+
+    def clear(self):
+      self.history.clear()
+
+    with open('/tmp/test.txt') as f:
+      lines = LineHistory(f)
+      for line in lines:
+        if 'Python' in line:
+          for line_no, history_line in lines.history:
+            print('{}:{}'.format(line_no, history_line), end = '')
+
+    # Content of /tmp/test.txt
+      # I am Leonard Shi.
+      # I am trying to understand Python's iterator and generator more deeply.
+      # I am looking for a new job.
+      # I hope myself to be an advanced Python guy.
+      # I'd like to do some data analysis or trading job.
+
+  ```
+
+  - Test
+
+    ```
+    >>> from collections import deque
+    >>> class LineHistory:
+    ...   def __init__(self, lines, history_len = 3):
+    ...     self.lines = lines
+    ...     self.history = deque(maxlen = history_len)
+    ...   def __iter__(self):
+    ...     for line_no, line in enumerate(self.lines, 1):
+    ...       self.history.append((line_no, line))
+    ...       yield line
+    ...   def clear(self):
+    ...     self.history.clear()
+    ... 
+    >>> with open('/tmp/test.txt') as f:
+    ...   lines = LineHistory(f)
+    ...   for line in lines:
+    ...     if 'Python' in line:
+    ...       for line_no, history_line in lines.history:
+    ...         print('{}:{}'.format(line_no, history_line), end = '')
+    ... 
+    1:I am Leonard Shi.
+    2:I am trying to understand Python's iterator and generator more deeply.
+    2:I am trying to understand Python's iterator and generator more deeply.
+    3:I am looking for a new job.
+    4:I hope myself to be an advanced Python guy.
+    >>> 
+    ```
 
 
