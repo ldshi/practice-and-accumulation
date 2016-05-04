@@ -1,0 +1,63 @@
+Yes.
+
+I prefer to use some modern MVVM lib, like AngularJS, then the feature 'emit, on' plus the 'Controller, Service Provider, Factory Provider' will perfectly meet this kind of requirements.
+
+If must use the native JavaScript, then the HTML5 Web Messaging APIs would be the best choice.
+-----------------------------------------------------------------------------------------------------------------------------------------------------------
+
+
+
+How to build one chrome extension (already published one to Chrome Web Store: https://github.com/leonard-sxy/gmail-tagger)
+
+Full process of building one big data analysis service (https://github.com/leonard-sxy/practice-and-accumulation/tree/master/machine_learning, https://github.com/sz-plus/followers-circle-crawler, https://github.com/sz-plus/followers-circle)
+
+Language design concept of Python(https://github.com/leonard-sxy/practice-and-accumulation/tree/master/Python)
+
+Watch some WeChat technology official Accounts, and some technology communities, and also the hot technology trending on GitHub, and also Harvard Business Review
+-----------------------------------------------------------------------------------------------------------------------------------------------------------
+
+
+
+Node.js is naturally designed by using event driven, so Asynchronous is everywhere in Node.js.
+
+Example: You have been working the whole day, all the tasks are need to be done today almost get finished, ant it is 6pm, so you send one SMS to your girl friend for asking what you should have for dinner, then you continue to do your left tasks, until you get your girl friend's reply, then you decide what you should do according to the reply.
+
+So, either in JavaScript or some other modern programming languages, having the following ways/ concepts to deal with this:
+1. callback
+2. promise
+3. generator
+4. event listening
+5. publish/subscribe
+6. Message Queue
+-----------------------------------------------------------------------------------------------------------------------------------------------------------
+
+
+
+Haven't encountered some bugs that I spent few hours by debugging step by step still know NOTHING about it, but do encounter some bugs I generally know the reason but don't know exactly how it is caused, in this condition I will prefer to re-structure the related module to fix that rather than spend significant time to figure out the exact reason.
+
+Generally to say, the architecture level bug is quite hard to find out the exact reason, the best solution and choice in this condition is re-structure, one example in the previous project is: under event driven architecture, guarantee the sequential operations.
+
+For Node.js, I use node-inspector.
+For Java, Eclipse's builtin step debug tool is awesome.
+For Front-end, chrome developer tool is awesome.
+For Linux C/C++, gdb is really helpful.
+
+Of course, except the above, the logging system is quite important to any system, either the development stage or the live stage.
+-----------------------------------------------------------------------------------------------------------------------------------------------------------
+
+
+
+Unit test for core parts, if time is allowed, then also for some other parts.
+
+Then integration test.
+
+Then Alpha test.
+
+Then customer real test.
+
+Then go live.
+
+If human resources is sufficient, automated the whole test process is good, CI is also necessary.
+-----------------------------------------------------------------------------------------------------------------------------------------------------------
+
+
