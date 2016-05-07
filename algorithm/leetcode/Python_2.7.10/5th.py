@@ -31,9 +31,12 @@ class Solution(object):
 
       x_range = min(l_len, r_len)
 
-      for r in range(1, x_range + 1):
+      tmp_start = int((max(accumulation) - 1) / 2)
+      start = tmp_start if tmp_start > 1 else 1
 
-        # This condition can be optimized, but will not significantly improve the performance.
+      for r in range(start, x_range + 1):
+
+        # This condition can be improved, but will not significantly improve the performance.
         if x_range + 1 + x_range + 1 <= max(accumulation):
           break
 
