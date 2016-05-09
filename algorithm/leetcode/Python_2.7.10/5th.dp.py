@@ -37,8 +37,15 @@ class Solution(object):
             matrix[idx][idx_inner] = 1
 
           if matrix[idx][idx_inner] > found_longest_palindrome_str_len:
-            found_longest_palindrome_str_len = matrix[idx][idx_inner]
-            idx_x, idx_y = idx, idx_inner
+            #
+            ## Why add this check?
+            ## Refer to this example:
+            ##   s = 'abacdfgdcaba', then reverted_s = 'abacdgfdcaba', then the LCS will be: 'abacd', apparently, this is wrong answer.
+            #
+            tmp = s[idx - matrix[idx][idx_inner] + 1 : idx + 1]
+            if tmp == tmp[::-1]:
+              found_longest_palindrome_str_len = matrix[idx][idx_inner]
+              idx_x, idx_y = idx, idx_inner
 
     if found_longest_palindrome_str_len == 0:
       return s[-1]

@@ -58,8 +58,14 @@ class Solution(object):
       if len(suffix_arr[idx]) >= found_longest_common_prefix_len and len(suffix_arr[idx - 1]) >= found_longest_common_prefix_len:
         common_prefix_len, common_prefix = get_common_prefix(suffix_arr[idx], suffix_arr[idx - 1])
         if common_prefix_len > found_longest_common_prefix_len:
-          found_longest_common_prefix = common_prefix
-          found_longest_common_prefix_len = common_prefix_len
+          #
+          ## Why add this check?
+          ## Refer to this example:
+          ##   s = 'abacdfgdcaba', then reverted_s = 'abacdgfdcaba', then the LCS will be: 'abacd', apparently, this is wrong answer.
+          #
+          if common_prefix == common_prefix[::-1]:
+            found_longest_common_prefix = common_prefix
+            found_longest_common_prefix_len = common_prefix_len
 
       idx -= 1
 

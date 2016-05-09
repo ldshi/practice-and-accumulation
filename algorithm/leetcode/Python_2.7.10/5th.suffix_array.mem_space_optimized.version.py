@@ -50,8 +50,14 @@ class Solution(object):
       if len(modified_s[suffix_arr[idx] : len_of_modified_s]) >= found_longest_common_prefix_len and len(modified_s[suffix_arr[idx - 1] : len_of_modified_s]) >= found_longest_common_prefix_len:
         common_prefix_len, common_prefix = get_common_prefix(modified_s[suffix_arr[idx] : len_of_modified_s], modified_s[suffix_arr[idx - 1] : len_of_modified_s])
         if common_prefix_len > found_longest_common_prefix_len:
-          found_longest_common_prefix = common_prefix
-          found_longest_common_prefix_len = common_prefix_len
+          #
+          ## Why add this check?
+          ## Refer to this example:
+          ##   s = 'abacdfgdcaba', then reverted_s = 'abacdgfdcaba', then the LCS will be: 'abacd', apparently, this is wrong answer.
+          #
+          if common_prefix == common_prefix[::-1]:
+            found_longest_common_prefix = common_prefix
+            found_longest_common_prefix_len = common_prefix_len
 
       idx -= 1
 
