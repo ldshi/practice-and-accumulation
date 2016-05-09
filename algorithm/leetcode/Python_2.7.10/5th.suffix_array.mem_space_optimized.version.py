@@ -4,7 +4,7 @@
 
 #
 ## On test case 'aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaabcaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa'
-##   still run into Memory Limit Exceeded  problem, through the performance looks good enough: about 60ms.
+##   still run into Memory Limit Exceeded  problem, through already optimized the memory space using a lot.
 #
 class Solution(object):
   def longestPalindrome(self, s):
@@ -36,27 +36,19 @@ class Solution(object):
 
     modified_s = s + '#' + s[::-1]
 
-    suffix_arr = []
-
-    # for idx, val in enumerate(modified_s):
-    #   suffix_arr.append(modified_s[idx : len(modified_s)])
-
     len_of_modified_s = len(modified_s)
-    for idx in range(len_of_modified_s):
-      suffix_arr.append(modified_s[idx : len_of_modified_s])
 
-    # Will this free some memory space?
-    del modified_s, len_of_modified_s
+    suffix_arr = range(len_of_modified_s)
 
-    suffix_arr.sort()
+    suffix_arr.sort(key = lambda x : modified_s[x : len_of_modified_s])
 
     found_longest_common_prefix = s[-1]
     found_longest_common_prefix_len = 1
 
     idx = len(suffix_arr) - 1
     while idx > 0:
-      if len(suffix_arr[idx]) >= found_longest_common_prefix_len and len(suffix_arr[idx - 1]) >= found_longest_common_prefix_len:
-        common_prefix_len, common_prefix = get_common_prefix(suffix_arr[idx], suffix_arr[idx - 1])
+      if len(modified_s[suffix_arr[idx] : len_of_modified_s]) >= found_longest_common_prefix_len and len(modified_s[suffix_arr[idx - 1] : len_of_modified_s]) >= found_longest_common_prefix_len:
+        common_prefix_len, common_prefix = get_common_prefix(modified_s[suffix_arr[idx] : len_of_modified_s], modified_s[suffix_arr[idx - 1] : len_of_modified_s])
         if common_prefix_len > found_longest_common_prefix_len:
           found_longest_common_prefix = common_prefix
           found_longest_common_prefix_len = common_prefix_len
