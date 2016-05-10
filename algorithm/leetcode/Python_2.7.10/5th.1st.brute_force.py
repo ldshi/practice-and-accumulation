@@ -1,6 +1,10 @@
 #
 ## https://leetcode.com/problems/longest-palindromic-substring/
 #
+
+#
+## Cannot fully pass the performance test.
+#
 class Solution(object):
   def longestPalindrome(self, s):
     """
