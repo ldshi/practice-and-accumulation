@@ -1,7 +1,7 @@
 #
 ## https://leetcode.com/problems/reverse-integer/
 #
-## 2147483647 hehe...
+## -2147483648 <= x <= 2147483647
 #
 class Solution(object):
   def reverse(self, x):
