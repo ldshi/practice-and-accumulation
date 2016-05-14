@@ -14,4 +14,26 @@
 
 2. SQL `order by` statement
 
+3. 机器学习常见算法
+  - 朴素贝叶斯
+    - Laplace校验
+  - 逻辑回归和线性回归
+    - 梯度下降
+  - KNN
+    - KD树
+    - SVM、SMO
+    - 对偶求解
+  - 决策树
+    - ID3
+    - C4.5
+    - Cart
+    - 随机森林RF
+  - GBDT
+  - BP
+  - 最下二乘法
+  - EM
+  - Bagging
+  - Boosting
+  - 凸优化
+
 
