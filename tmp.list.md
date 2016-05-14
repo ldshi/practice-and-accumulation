@@ -36,4 +36,18 @@
   - Boosting
   - 凸优化
 
+4. [TCP 3次握手 4次挥手 node.js cluster module以及并发测试siege](https://mp.weixin.qq.com/s?__biz=MzAwNDcyNjI3OA==&mid=2650838731&idx=1&sn=6a9d5dcf551e5a8fa9d694c7f70edc4a&scene=1&srcid=0514QYF3RMYITR2PjiA8jajN&pass_ticket=BaLMQWAuJq4FFKR3ZNoy4MvsNqu2idSDlLn%2FdI9hGpd2ITk%2B4LYBI5bPRmN9l2tJ#rd)
+
+5. [傅立叶变换 vs 小波分析](https://mp.weixin.qq.com/s?__biz=MzI2NjA3NTc4Ng==&mid=2652077976&idx=1&sn=4de57da48ace3c2c17a0177b1e90e684&scene=1&srcid=05145FOIDXXLls2TQJxab1kd&pass_ticket=BaLMQWAuJq4FFKR3ZNoy4MvsNqu2idSDlLn%2FdI9hGpd2ITk%2B4LYBI5bPRmN9l2tJ#rd)
+
+6. [从随机过程到马尔科夫链蒙特卡洛方法](https://mp.weixin.qq.com/s?__biz=MzI2NjA3NTc4Ng==&mid=2652077972&idx=1&sn=707be5926dc6012166f49e1d5a9ce2bd&scene=1&srcid=0514LwyMCeioIJx66TuzHOVX&pass_ticket=BaLMQWAuJq4FFKR3ZNoy4MvsNqu2idSDlLn%2FdI9hGpd2ITk%2B4LYBI5bPRmN9l2tJ#rd)
+
+7. [数学之美：平凡又神奇的贝叶斯方法](https://mp.weixin.qq.com/s?__biz=MzI2NjA3NTc4Ng==&mid=2652077970&idx=1&sn=be062f2cfb9a0ec5662c0b68591a414f&scene=1&srcid=0514tfF2RaNolivGc1ypChb2&pass_ticket=BaLMQWAuJq4FFKR3ZNoy4MvsNqu2idSDlLn%2FdI9hGpd2ITk%2B4LYBI5bPRmN9l2tJ#rd)
+
+8. [如何用简单易懂的例子解释隐马尔可夫模型？](https://mp.weixin.qq.com/s?__biz=MzI2NjA3NTc4Ng==&mid=2652077944&idx=1&sn=d17758f0aed8670ba0f5f41e481f0205&scene=1&srcid=0514FMmwVk3FkOjjEm4XWcxW&pass_ticket=BaLMQWAuJq4FFKR3ZNoy4MvsNqu2idSDlLn%2FdI9hGpd2ITk%2B4LYBI5bPRmN9l2tJ#rd)
+
+9. [Python验证码识别：利用pytesser识别简单图形验证码](https://mp.weixin.qq.com/s?__biz=MzA5ODUzOTA0OQ==&mid=2651688035&idx=1&sn=c8ad383215ed11a11a847933c54e0ee6&scene=1&srcid=0514hcQT3NiZdELz5Q1jTit5&pass_ticket=BaLMQWAuJq4FFKR3ZNoy4MvsNqu2idSDlLn%2FdI9hGpd2ITk%2B4LYBI5bPRmN9l2tJ#rd)
+
+10. [Python验证码识别：利用pytesser识别简单图形验证码](https://mp.weixin.qq.com/s?__biz=MzA5ODUzOTA0OQ==&mid=2651688035&idx=1&sn=c8ad383215ed11a11a847933c54e0ee6&scene=1&srcid=0514hcQT3NiZdELz5Q1jTit5&pass_ticket=BaLMQWAuJq4FFKR3ZNoy4MvsNqu2idSDlLn%2FdI9hGpd2ITk%2B4LYBI5bPRmN9l2tJ#rd)
+
 
