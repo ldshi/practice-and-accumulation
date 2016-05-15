@@ -79,4 +79,10 @@
 
 6. [MySQL stored routines vs stored functions?](http://dev.mysql.com/doc/refman/5.7/en/stored-program-restrictions.html)
 
+7. MySQL identifying relationship and non-identifying relationship
+  - [MySQL identifying relationship vs non-identifying relationship](http://stackoverflow.com/questions/2814469/still-confused-about-identifying-vs-non-identifying-relationships/2814663#2814663)
+  - **Why and when do we need the identifying relationship?**
+
+
+
 
