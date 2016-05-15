@@ -77,4 +77,6 @@
   - enum
     - [When you should and should NOT use ENUM data type](http://www.cubrid.org/blog/cubrid-life/when-you-should-and-should-not-use-enum-data-type/)
 
+6. [MySQL stored routines vs stored functions?](http://dev.mysql.com/doc/refman/5.7/en/stored-program-restrictions.html)
+
 
