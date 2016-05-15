@@ -65,4 +65,16 @@
 4. MyISAM vs InnoDB
   - <img src="images/MyISAM_InnoDB_0.png"/>
 
+5. MySQL types
+  - int
+    - <img src="images/type_int_range.png"/>
+    - [What is the size of column of int(11) in mysql in bytes?](http://stackoverflow.com/questions/5634104/what-is-the-size-of-column-of-int11-in-mysql-in-bytes)
+  - char and varchar
+    - <img src="images/type_char_varchar.png"/>
+    - [The CHAR and VARCHAR Types](http://dev.mysql.com/doc/refman/5.7/en/char.html)
+    - [MySQL select where varchar length](http://stackoverflow.com/questions/25704611/mysql-select-where-varchar-length)
+    - [Best practices for SQL varchar column length](http://stackoverflow.com/questions/8295131/best-practices-for-sql-varchar-column-length)
+  - enum
+    - [When you should and should NOT use ENUM data type](http://www.cubrid.org/blog/cubrid-life/when-you-should-and-should-not-use-enum-data-type/)
+
 
