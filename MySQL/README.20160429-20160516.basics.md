@@ -81,8 +81,9 @@
 
 7. MySQL identifying relationship and non-identifying relationship
   - [MySQL identifying relationship vs non-identifying relationship](http://stackoverflow.com/questions/2814469/still-confused-about-identifying-vs-non-identifying-relationships/2814663#2814663)
+  
   - **Why and when do we need the identifying relationship?**
 
-
+8. [MySQL routines and routine groups](https://dev.mysql.com/doc/workbench/en/wb-routines-routine-groups.html)
 
 
