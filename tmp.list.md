@@ -50,4 +50,20 @@
 
 10. [Python验证码识别：利用pytesser识别简单图形验证码](https://mp.weixin.qq.com/s?__biz=MzA5ODUzOTA0OQ==&mid=2651688035&idx=1&sn=c8ad383215ed11a11a847933c54e0ee6&scene=1&srcid=0514hcQT3NiZdELz5Q1jTit5&pass_ticket=BaLMQWAuJq4FFKR3ZNoy4MvsNqu2idSDlLn%2FdI9hGpd2ITk%2B4LYBI5bPRmN9l2tJ#rd)
 
+11. Microsoft fast and Microsoft fast search
+
+12. LexaLytics
+
+13. [kofax](http://www.kofax.com/data-integration-extraction)
+
+14. [kapow](http://www.infoworld.com/article/2630604/applications/kapow-focuses-on-web-data-services.html)
+
+15. [Apache mahout](http://mahout.apache.org/)
+
+16. [Apache Lucene](https://lucene.apache.org/core/)
+
+17. [Apache Solr](http://lucene.apache.org/solr/)
+
+18. [Apache OpenNLP](https://opennlp.apache.org/)
+
 
