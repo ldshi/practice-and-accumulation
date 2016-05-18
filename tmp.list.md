@@ -66,4 +66,6 @@
 
 18. [Apache OpenNLP](https://opennlp.apache.org/)
 
+19. [Construct real time advertisement building system](http://www.kiosked.com/) - Generate the advertisement in real time according to the page content.
+
 
