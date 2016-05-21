@@ -122,4 +122,6 @@
 
 25. [Web Component and React 组件](http://mp.weixin.qq.com/s?__biz=MzAwNDcyNjI3OA==&mid=2650838823&idx=1&sn=a82c47024e8746e0e89c18dc7e4a75fb&scene=0#wechat_redirect)
 
+26. [Writing fast, memory-efficient JavaScript](http://mp.weixin.qq.com/s?__biz=MzAwNDcyNjI3OA==&mid=2650838822&idx=1&sn=d57fdff91022804b03c64cad900a79fe&scene=0#wechat_redirect)
+
 
