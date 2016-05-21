@@ -114,4 +114,12 @@
   - 生活的location
   - 最近时间段关注的东西、问题、事物
 
+22. [promise](http://www.html-js.com/article/2589)
+
+23. [React](http://mp.weixin.qq.com/s?__biz=MzAwNDcyNjI3OA==&mid=2650838823&idx=1&sn=a82c47024e8746e0e89c18dc7e4a75fb&scene=0#wechat_redirect)
+
+24. [Vue](http://mp.weixin.qq.com/s?__biz=MzAwNDcyNjI3OA==&mid=2650838823&idx=1&sn=a82c47024e8746e0e89c18dc7e4a75fb&scene=0#wechat_redirect)
+
+25. [Web Component and React 组件](http://mp.weixin.qq.com/s?__biz=MzAwNDcyNjI3OA==&mid=2650838823&idx=1&sn=a82c47024e8746e0e89c18dc7e4a75fb&scene=0#wechat_redirect)
+
 
