@@ -124,4 +124,6 @@
 
 26. [Writing fast, memory-efficient JavaScript](http://mp.weixin.qq.com/s?__biz=MzAwNDcyNjI3OA==&mid=2650838822&idx=1&sn=d57fdff91022804b03c64cad900a79fe&scene=0#wechat_redirect)
 
+27. [Kernels of browsers](http://mp.weixin.qq.com/s?__biz=MzAwNDcyNjI3OA==&mid=2650838792&idx=1&sn=d0c711ee3d75d483cade36e988ecf90a&scene=0#wechat_redirect)
+
 
