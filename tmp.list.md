@@ -136,4 +136,6 @@
 
 32. [Linux入侵检测基础 ](http://mp.weixin.qq.com/s?__biz=MzIyMDEzMTA2MQ==&mid=2651147543&idx=1&sn=fbc00c0bf3b211d2dca912f1e3558fd5&scene=0#wechat_redirect)
 
+33. [如何用简单易懂的例子解释隐马尔可夫模型?](https://www.zhihu.com/question/20962240)
+
 
