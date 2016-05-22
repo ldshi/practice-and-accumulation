@@ -126,4 +126,14 @@
 
 27. [Kernels of browsers](http://mp.weixin.qq.com/s?__biz=MzAwNDcyNjI3OA==&mid=2650838792&idx=1&sn=d0c711ee3d75d483cade36e988ecf90a&scene=0#wechat_redirect)
 
+28. [使用Python进行无线攻击：Dnspwn攻击](http://mp.weixin.qq.com/s?__biz=MzA5ODUzOTA0OQ==&mid=2651688040&idx=1&sn=b0110aaf293323af41a283699d4fe136&scene=0#wechat_redirect)
+
+29. [Python程序的执行原理](http://mp.weixin.qq.com/s?__biz=MzA5ODUzOTA0OQ==&mid=2651688033&idx=1&sn=3e52e2139a458f4f05dd3b1f777fb904&scene=0#wechat_redirect)
+
+30. [MySQL学习笔记：插件式存储引擎](http://mp.weixin.qq.com/s?__biz=MzI3NDA4OTk1OQ==&mid=2649900741&idx=1&sn=e40e0b44c1bb90530d5dd853b004a83d&scene=0#wechat_redirect)
+
+31. [实际项目中的常见算法](http://mp.weixin.qq.com/s?__biz=MzI2NjA3NTc4Ng==&mid=2652077993&idx=1&sn=978241052af8be2e86367dfff38f7511&scene=0#wechat_redirect)
+
+32. [Linux入侵检测基础 ](http://mp.weixin.qq.com/s?__biz=MzIyMDEzMTA2MQ==&mid=2651147543&idx=1&sn=fbc00c0bf3b211d2dca912f1e3558fd5&scene=0#wechat_redirect)
+
 
