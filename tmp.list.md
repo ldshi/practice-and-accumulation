@@ -138,4 +138,6 @@
 
 33. [如何用简单易懂的例子解释隐马尔可夫模型?](https://www.zhihu.com/question/20962240)
 
+34. [MySQL学习笔记：SQL服务器模式汇总](http://mp.weixin.qq.com/s?__biz=MzI3NDA4OTk1OQ==&mid=2649900742&idx=1&sn=fc31795856f7c2e5e91772585d85e712&scene=0#wechat_redirect)
+
 
