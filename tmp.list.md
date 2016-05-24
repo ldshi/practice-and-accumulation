@@ -140,4 +140,6 @@
 
 34. [MySQL学习笔记：SQL服务器模式汇总](http://mp.weixin.qq.com/s?__biz=MzI3NDA4OTk1OQ==&mid=2649900742&idx=1&sn=fc31795856f7c2e5e91772585d85e712&scene=0#wechat_redirect)
 
+35. [正态分布的由来, 高斯与误差正态分布, 戈塞特与T检验](http://mp.weixin.qq.com/s?__biz=MzAxMjcyNjE5MQ==&mid=2650486591&idx=1&sn=16bfcde2e691528b38604449a5b23e72&scene=0#wechat_redirect)
+
 
