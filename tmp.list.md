@@ -142,4 +142,8 @@
 
 35. [正态分布的由来, 高斯与误差正态分布, 戈塞特与T检验](http://mp.weixin.qq.com/s?__biz=MzAxMjcyNjE5MQ==&mid=2650486591&idx=1&sn=16bfcde2e691528b38604449a5b23e72&scene=0#wechat_redirect)
 
+36. [机器学习中的相似性度量：距离](http://mp.weixin.qq.com/s?__biz=MzAxMjcyNjE5MQ==&mid=2650486595&idx=1&sn=024f66f8d2fa69d62fbef5e184600fde&scene=0#wechat_redirect)
+
+37. [波斯公主选驸马： 关于算法和重大决策](http://mp.weixin.qq.com/s?__biz=MzI2NjA3NTc4Ng==&mid=2652078072&idx=1&sn=0fd0440c9578057abdcb779735f02031&scene=0#wechat_redirect)
+
 
