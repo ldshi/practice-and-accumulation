@@ -146,4 +146,6 @@
 
 37. [波斯公主选驸马： 关于算法和重大决策](http://mp.weixin.qq.com/s?__biz=MzI2NjA3NTc4Ng==&mid=2652078072&idx=1&sn=0fd0440c9578057abdcb779735f02031&scene=0#wechat_redirect)
 
+38. [JavaEE中遗漏的10个最重要的安全控制](http://mp.weixin.qq.com/s?__biz=MzIyMDEzMTA2MQ==&mid=2651147580&idx=1&sn=5bde4606b0bb17fce6e7c85188ca74ee&scene=0#wechat_redirect)
+
 
