@@ -150,4 +150,6 @@
 
 39. [Blockchain](https://www.zhihu.com/question/27687960)
 
+40. [Creating Desktop Applications With AngularJS and GitHub Electron](https://scotch.io/tutorials/creating-desktop-applications-with-angularjs-and-github-electron)
+
 
