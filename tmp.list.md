@@ -152,4 +152,6 @@
 
 40. [Creating Desktop Applications With AngularJS and GitHub Electron](https://scotch.io/tutorials/creating-desktop-applications-with-angularjs-and-github-electron)
 
+41. [A Tour of Go](https://tour.golang.org/welcome/1)
+
 
