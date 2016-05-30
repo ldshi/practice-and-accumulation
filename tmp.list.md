@@ -154,4 +154,8 @@
 
 41. [A Tour of Go](https://tour.golang.org/welcome/1)
 
+42. Bitcoin & the Byzantine Generals Problem
+  - [Bitcoin & the Byzantine Generals Problem](https://web.archive.org/web/20140603221234/http://expectedpayoff.com/blog/2013/03/22/bitcoin-and-the-byzantine-generals-problem/)
+  - [比特币与拜占庭将军问题](http://www.8btc.com/bitcoin-and-the-byzantine-generals-problem)
+
 
