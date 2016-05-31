@@ -158,4 +158,8 @@
   - [Bitcoin & the Byzantine Generals Problem](https://web.archive.org/web/20140603221234/http://expectedpayoff.com/blog/2013/03/22/bitcoin-and-the-byzantine-generals-problem/)
   - [比特币与拜占庭将军问题](http://www.8btc.com/bitcoin-and-the-byzantine-generals-problem)
 
+43. Making Sense of Bitcoin Transaction Fees
+  - [Making Sense of Bitcoin Transaction Fees](http://bitzuma.com/posts/making-sense-of-bitcoin-transaction-fees/)
+  - [理解比特币交易费用](http://www.8btc.com/making-sense-of-bitcoin-transaction-fee)
+
 
