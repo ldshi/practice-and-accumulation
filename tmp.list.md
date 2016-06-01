@@ -162,4 +162,10 @@
   - [Making Sense of Bitcoin Transaction Fees](http://bitzuma.com/posts/making-sense-of-bitcoin-transaction-fees/)
   - [理解比特币交易费用](http://www.8btc.com/making-sense-of-bitcoin-transaction-fee)
 
+44. [15年双11手淘前端技术巡演： H5性能最佳实践](http://mp.weixin.qq.com/s?__biz=MzAwNDcyNjI3OA==&mid=2650838912&idx=1&sn=2bca14e8ca4228172de9cf727f0f130b&scene=0#wechat_redirect)
+
+45. [从BAT面试题说起：前端面试解题思路](http://mp.weixin.qq.com/s?__biz=MzAwNDcyNjI3OA==&mid=2650838909&idx=1&sn=089a315c006ced68db4ac6582c3bd68f&scene=0#wechat_redirect)
+
+46. [堆：神奇的优先队列](http://mp.weixin.qq.com/s?__biz=MzI2NjA3NTc4Ng==&mid=2652078111&idx=1&sn=ac486400d4ad4fd9681e20707805ca6b&scene=0#wechat_redirect)
+
 
