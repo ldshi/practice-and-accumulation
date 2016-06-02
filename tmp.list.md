@@ -168,4 +168,6 @@
 
 46. [堆：神奇的优先队列](http://mp.weixin.qq.com/s?__biz=MzI2NjA3NTc4Ng==&mid=2652078111&idx=1&sn=ac486400d4ad4fd9681e20707805ca6b&scene=0#wechat_redirect)
 
+47. [遗传算法(Genetic Algorithm)概述](http://mp.weixin.qq.com/s?__biz=MzI2NjA3NTc4Ng==&mid=2652078127&idx=1&sn=3b1d8ea6d77814cef848b3e710158cc2&scene=0#wechat_redirect)
+
 
