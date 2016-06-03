@@ -16,11 +16,11 @@
   
   - 'group by' and 'having'
     - The 'group by' statement will proceed the 'group operation' by the condition given by you after the 'by' and form the records into several groups, then proceed the 'having conditions' on **EACH GROUP, here you should pay enough attention to _EACH GROUP_, not: proceed 'having conditions' on those records inside each group, but _EACH GROUP_, that means only having two results:**
-          - **Keep this group.**
-          - **Omit this group.**
-          - **As how to choose one record from those kept groups, and then form into the output, you told no clue to SQL how to do that, so probably it depends on how SQL throws the dice.**
-          - So:
-            - **Here require you to make all the records inside a group are same in a sense to your query, that is: choosing which record as reference doesn't matter.**
+      - **Keep this group.**
+      - **Omit this group.**
+      - **As how to choose one record from those kept groups, and then form into the output, you told no clue to SQL how to do that, so probably it depends on how SQL throws the dice.**
+      - So:
+        - **Here require you to make all the records inside a group are same in a sense to your query, that is: choosing which record as reference doesn't matter.**
             
     - **Again:**
       - **All the records inside a group are required to be same in a sense to your query, that is: choosing which record as reference doesn't matter.**
