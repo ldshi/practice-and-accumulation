@@ -170,4 +170,6 @@
 
 47. [遗传算法(Genetic Algorithm)概述](http://mp.weixin.qq.com/s?__biz=MzI2NjA3NTc4Ng==&mid=2652078127&idx=1&sn=3b1d8ea6d77814cef848b3e710158cc2&scene=0#wechat_redirect)
 
+48. [Linear Algebra](http://mp.weixin.qq.com/s?__biz=MzI2NjA3NTc4Ng==&mid=2652078129&idx=1&sn=bd8ed571759c1af375dffb0cbe744586&scene=0#wechat_redirect )
+
 
