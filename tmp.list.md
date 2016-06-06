@@ -174,4 +174,8 @@
 
 49. [RabbitMQ or Apache Kafka](http://mp.weixin.qq.com/s?__biz=MzA4ODgwNjk1MQ==&mid=403597527&idx=1&sn=a242e50735b2d5203b24d6f4edf2915c&scene=21#wechat_redirect)
 
+50. [How does HTTPs work?](http://mp.weixin.qq.com/s?__biz=MzIyMDEzMTA2MQ==&mid=2651147614&idx=1&sn=cc8a41e4f157918a7a69031cfe81e4a7&scene=0#wechat_redirect)
+
+51. [Why is float type number not accurate?](http://mp.weixin.qq.com/s?__biz=MzAxOTc0NzExNg==&mid=2665513140&idx=1&sn=565517e977ac56904305a4a9f9d65012&scene=0#wechat_redirect)
+
 
